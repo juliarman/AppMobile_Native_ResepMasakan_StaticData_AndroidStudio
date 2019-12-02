@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView android:id="@+id/card_resep"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    app:cardCornerRadius="5dp"
+    android:layout_marginTop="5dp"
+    android:layout_marginRight="9dp"
+    android:layout_marginLeft="9dp"
+    android:layout_marginBottom="5dp"
+    android:layout_gravity="center"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+<de.hdodenhof.circleimageview.CircleImageView
+    android:id="@+id/gambarresep"
+    android:layout_margin="20dp"
+    android:background="@drawable/example"
+    android:layout_width="70dp"
+    android:layout_height="70dp"/>
+
+    <TextView
+        android:layout_marginTop="10dp"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:layout_toRightOf="@id/gambarresep"
+        android:id="@+id/judulresep"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Resep Coto Makassar"
+        />
+
+    <TextView
+        android:layout_marginTop="3dp"
+        android:textSize="13dp"
+        android:layout_toRightOf="@id/gambarresep"
+        android:layout_below="@id/judulresep"
+        android:id="@+id/deskripsiresep"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Resep Coto Makassar denga bahan yang sederhana yang mudah di dapat"
+        />
+
+    <Button
+
+        android:layout_margin="5dp"
+        android:layout_below="@id/deskripsiresep"
+        android:layout_toRightOf="@id/gambarresep"
+        android:id="@+id/lihatresep"
+        android:text="LIHAT RESEP"
+        android:background="#7BD0EB"
+        android:textColor="#fff"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"/>
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

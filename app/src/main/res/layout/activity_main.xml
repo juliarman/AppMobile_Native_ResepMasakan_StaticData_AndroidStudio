@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+   <RelativeLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"/>
+ <FrameLayout
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content">
+
+  <ImageView
+      android:layout_width="match_parent"
+      android:layout_height="200dp"
+      android:scaleType="fitXY"
+      android:src="@drawable/background" />
+ </FrameLayout>
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        app:cardCornerRadius="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    <LinearLayout
+
+        android:padding="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+     <Button
+         android:textColor="#fff"
+         android:layout_margin="10dp"
+         android:id="@+id/btn_food"
+         android:layout_width="230px"
+         android:layout_height="190px"
+         android:text="FOOD"
+         android:background="@drawable/btn_food"
+         android:layout_weight="1"
+          />
+
+        <Button
+            android:textColor="#fff"
+            android:layout_margin="10dp"
+            android:id="@+id/btn_cookies"
+            android:layout_width="230px"
+            android:layout_height="190px"
+            android:text="COOKIES"
+            android:background="@drawable/btn_cookies"
+            android:layout_weight="1"
+            />
+
+        <Button
+            android:textColor="#fff"
+            android:layout_margin="10dp"
+            android:id="@+id/btn_drink"
+            android:layout_width="230px"
+            android:layout_height="190px"
+            android:text="DRINK"
+            android:background="@drawable/btn_drink"
+            android:layout_weight="1"
+            />
+
+        <Button
+            android:textColor="#fff"
+            android:layout_margin="10dp"
+            android:id="@+id/btn_about"
+            android:layout_width="230px"
+            android:layout_height="190px"
+            android:text="ABOUT"
+            android:background="@drawable/btn_about"
+            android:layout_weight="1"
+            />
+
+
+    </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/resepcard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </androidx.recyclerview.widget.RecyclerView>
+
+</LinearLayout>
